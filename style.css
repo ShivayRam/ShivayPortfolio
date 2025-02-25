@@ -1,4 +1,5 @@
 
+
 /*import our fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -52,20 +53,123 @@ a {
 
 
 a:hover { /*stating what happens when we hover over the links*/
-          color: grey;
-          text-decoration: underline;
-          text-underline-offset: 1rem; /*offsets the underline of the text so its right underneath the link*/
-          text-decoration-color: rgb(181, 181, 181);
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 1rem; /*offsets the underline of the text so its right underneath the link*/
+        text-decoration-color: rgb(181, 181, 181);
 }
 
 
 .logo {
-        font-size: 2rem;
+    font-size: 2rem;
 
 }
 
 
 .logo:hover {
-                cursor: default; /*keeps cursor as default when hovering over logo*/
+            cursor: default; /*keeps cursor as default when hovering over logo*/
 
 }
+
+/*hamburger menu*/
+#hamburger-nav {
+    display: none;
+
+}
+
+
+.hambuger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+
+.hambuger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+
+}
+
+
+.menu-links li {
+    list-style: none;
+    
+}
+
+
+.menu-links.open {
+    max-height: 300px;
+    
+
+}
+
+
+.hambuger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+
+.hambuger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.hambuger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+
+.hambuger-icon span:first-child {
+    transform: none;
+}
+
+
+
+.hambuger-icon span:first-child {
+    opacity: 1;
+}
+
+
+
+.hambuger-icon span:first-child {
+    transform: none;
+}
+
+
+/*SECTIONS STYLING*/
