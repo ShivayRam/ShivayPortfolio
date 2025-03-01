@@ -1,5 +1,5 @@
 @media screen and (max-width: 1200px) { /*code for when screen size is below 1200px the desktop navigation is hidden and the hamburger navigation is displayed*/
-    #desktop-nav{
+    #desktop-nav {
         display: none;
     }
 
